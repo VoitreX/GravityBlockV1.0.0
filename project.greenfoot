@@ -1,0 +1,26 @@
+#Greenfoot properties
+#Sun Dec 06 02:18:13 PST 2015
+class.Menu.superclass=Super
+project.charset=UTF-8
+class.mainMenuOption.superclass=Menu
+mainWindow.height=1030
+version=2.7.1
+class.mainMenu.superclass=Menu
+class.Curser.image=curser.png
+class.alpha0.superclass=Levels
+class.yellowBlock.superclass=Blocks
+class.Super.superclass=greenfoot.World
+class.mainMenuLevelSelect.superclass=Menu
+world.lastInstantiated=alpha0
+class.redBlock.image=redBlock.png
+mainWindow.y=0
+class.Curser.superclass=Player
+mainWindow.x=-10
+class.blueBlock.superclass=Blocks
+package.numDependencies=0
+class.Blocks.superclass=greenfoot.Actor
+package.numTargets=0
+mainWindow.width=980
+class.redBlock.superclass=Blocks
+class.Levels.superclass=Super
+class.Player.superclass=greenfoot.Actor
