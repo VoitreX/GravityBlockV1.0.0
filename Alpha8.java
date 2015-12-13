@@ -15,8 +15,14 @@ public class Alpha8 extends AlphaLevels
      */
     public Alpha8()
     {
+        prepare();
+    }
+    public void prepare(){
+        Curser curser = new Curser();
+        addObject(curser, 658, 332);
     }
     public void act(){
         nextLevel(new Alpha9());
+        restartLevel(new Alpha8());
     }
 }

@@ -15,8 +15,15 @@ public class Alpha2 extends AlphaLevels
      */
     public Alpha2()
     {
+        
+        prepare();
+    }
+    public void prepare(){
+        Curser curser = new Curser();
+        addObject(curser, 658, 332);
     }
     public void act(){
         nextLevel(new Alpha3());
+        restartLevel(new Alpha2());
     }
 }

@@ -14,6 +14,6 @@ public class redAlpha4 extends RedLevels
      */
     public void act() 
     {
-        // Add your action code here.
+        clickChangeLevel(new Alpha4());
     }    
 }

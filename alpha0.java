@@ -36,7 +36,9 @@ public class Alpha0 extends AlphaLevels
     }
 
     public void act(){
+        
         nextLevel(new Alpha1());
+        restartLevel(new Alpha0());
     }
 }
 

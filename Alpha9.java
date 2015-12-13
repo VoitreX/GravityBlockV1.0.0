@@ -15,8 +15,14 @@ public class Alpha9 extends AlphaLevels
      */
     public Alpha9()
     {
+        prepare();
+    }
+    public void prepare(){
+        Curser curser = new Curser();
+        addObject(curser, 658, 332);
     }
     public void act(){
         nextLevel(new Beta0());
+        restartLevel(new Alpha9());
     }
 }

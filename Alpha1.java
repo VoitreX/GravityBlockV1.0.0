@@ -41,9 +41,13 @@ public class Alpha1 extends AlphaLevels
         redblock10.setLocation(806, 361);
         redBlock redblock12 = new redBlock();
         addObject(redblock12, 440, 369);
+        
+        
     }
     
     public void act(){
+        
         nextLevel(new Alpha2());
+        restartLevel(new Alpha1());
     }
 }

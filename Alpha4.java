@@ -15,8 +15,14 @@ public class Alpha4 extends AlphaLevels
      */
     public Alpha4()
     {
+        prepare();
+    }
+    public void prepare(){
+        Curser curser = new Curser();
+        addObject(curser, 658, 332);
     }
     public void act(){
         nextLevel(new Alpha5());
+        restartLevel(new Alpha4());
     }
 }

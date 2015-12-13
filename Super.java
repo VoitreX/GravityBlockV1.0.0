@@ -8,7 +8,8 @@ import greenfoot.*;
  */
 public class Super extends World
 {
-
+    
+    
     /**
      * Constructor for objects of class Super.
      * 
