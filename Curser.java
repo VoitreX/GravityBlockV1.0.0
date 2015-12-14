@@ -52,22 +52,23 @@ public class Curser extends Player
     }    
 
     public void gravity(){
-        if (gravityNumber == 0)setLocation(getX(), getY()+(3*(acceleration)));
-        if (gravityNumber == 1)setLocation(getX()+(3*(acceleration)), getY());
-        if (gravityNumber == 2)setLocation(getX(), getY()-(3*(acceleration)));
-        if (gravityNumber == 3)setLocation(getX()-(3*(acceleration)), getY());
+        setLocation(getX(), getY()+(3*(acceleration)));
+        //if (gravityNumber == 0)setLocation(getX(), getY()+(3*(acceleration)));
+        //if (gravityNumber == 1)setLocation(getX()+(3*(acceleration)), getY());
+        //if (gravityNumber == 2)setLocation(getX(), getY()-(3*(acceleration)));
+        //if (gravityNumber == 3)setLocation(getX()-(3*(acceleration)), getY());
     }
 
     public void changeGravity(){
-        if (gravityNumberTimer <= 21)gravityNumberTimer++;
-        if (gravityNumberTimer2 <= 21)gravityNumberTimer2++;
+        if (gravityNumberTimer <= 11)gravityNumberTimer++;
+        if (gravityNumberTimer2 <= 11)gravityNumberTimer2++;
         if (gravityNumber == -1) gravityNumber = 3;
         if (gravityNumber == 4) gravityNumber = 0;
-        if (Greenfoot.isKeyDown("left") && gravityNumberTimer >= 20){
+        if (Greenfoot.isKeyDown("left") && gravityNumberTimer >= 10){
             setGravityNumber(getGravityNumber() - 1); 
             gravityNumberTimer = 0;
         }
-        if (Greenfoot.isKeyDown("right") && gravityNumberTimer2 >= 20){
+        if (Greenfoot.isKeyDown("right") && gravityNumberTimer2 >= 10){
             setGravityNumber(getGravityNumber() + 1);
             gravityNumberTimer2 = 0;
         }
@@ -75,7 +76,8 @@ public class Curser extends Player
 
     public void hitRedBlock(){
         if(getOneIntersectingObject(redBlock.class) !=null){
-            if(gravityNumber == 0){
+            setLocation(getX(), getY()-(3*(getAcceleration())));
+            /*if(gravityNumber == 0){
                 setLocation(getX(), getY()-(3*(getAcceleration())));
             }          
             if(gravityNumber == 1){
@@ -87,7 +89,7 @@ public class Curser extends Player
             if(gravityNumber == 3){
                 setLocation(getX()+(3*(getAcceleration())), getY());
             }    
-            setAcceleration(1);
+            setAcceleration(1);*/
         } 
         else constantGravity(); 
     }
@@ -233,5 +235,6 @@ public class Curser extends Player
     public boolean getAlpha9(){
         return Alpha9;
     }
+    
 }
 

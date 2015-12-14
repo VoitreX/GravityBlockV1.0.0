@@ -21,6 +21,8 @@ public class Levels extends Super
         addObject(uimainmenu, 227, 585);
         UILevelSelect uilevelselect = new UILevelSelect();
         addObject(uilevelselect, 228, 428);
+        centerDot centerdot = new centerDot();
+        addObject(centerdot, 865, 360);
     }
     
 

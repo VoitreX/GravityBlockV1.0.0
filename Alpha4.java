@@ -1,5 +1,5 @@
 import greenfoot.*;
-
+import java.util.*;
 /**
  * Write a description of class Alpha4 here.
  * 
@@ -8,7 +8,7 @@ import greenfoot.*;
  */
 public class Alpha4 extends AlphaLevels
 {
-
+    public List<Curser> curserList;
     /**
      * Constructor for objects of class Alpha4.
      * 
@@ -17,12 +17,32 @@ public class Alpha4 extends AlphaLevels
     {
         prepare();
     }
+    
+    Curser curser = new Curser();
+    
     public void prepare(){
-        Curser curser = new Curser();
         addObject(curser, 658, 332);
     }
     public void act(){
         nextLevel(new Alpha5());
         restartLevel(new Alpha4());
+    }
+    
+    public void changeOrientation(){
+        curserList = getObjects(Curser.class);
+        curserList.get(0).getGravityNumber();
+
+        if (curser.getGravityNumber() == 0){
+            
+        }
+        if (curser.getGravityNumber() == 1){
+            
+        }
+        if (curser.getGravityNumber() == 2){
+            
+        }
+        if (curser.getGravityNumber() == 3){
+            
+        }        
     }
 }

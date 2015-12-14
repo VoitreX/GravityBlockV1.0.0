@@ -39,6 +39,8 @@ public class mainMenuLevelSelect extends Menu
     {
         Curser curser = new Curser();
         
+        Back back = new Back();
+        addObject(back, (getWidth()/10)*9, 9*(getHeight()/10));
         redAlpha0 redalpha0 = new redAlpha0();
         addObject(redalpha0, getWidth()/16, getHeight()/10);
         redAlpha1 redalpha1 = new redAlpha1();

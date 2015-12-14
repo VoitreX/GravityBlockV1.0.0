@@ -25,6 +25,14 @@ public class mainMenuOption extends Menu
      */
     private void prepare()
     {
-        
+
+        Volume volume2 = new Volume();
+        addObject(volume2, getWidth()/5, getHeight()/5);
+        Plus plus2 = new Plus();
+        addObject(plus2, (getWidth()/8)*3, getHeight()/5);
+        Minus minus2 = new Minus();
+        addObject(minus2, (getWidth()/8)*4, getHeight()/5);
+        Back back = new Back();
+        addObject(back, (getWidth()/5), 4*(getHeight()/5));
     }
 }
